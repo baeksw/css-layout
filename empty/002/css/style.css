@@ -1,0 +1,34 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.box-container {
+    display:flex;
+    height: 200px;
+    border: 4px solid lightgreen;
+    justify-content: center;
+}
+
+.box-item {
+    height:40px;
+    width: 40px;
+    border: 2px solid #453234;
+    background: rgba(35, 116, 222, 0.503);
+}
+
+.box-item:nth-child(odd) {
+    background: coral;
+}
+
+.box-item:nth-child(3) {
+    flex: 0 1 150px;
+    order:1;
+}
+.box-item:nth-child(1) {
+    flex: 0 1 150px;
+    order:2;
+}
