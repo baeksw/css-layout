@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <h1 class="text-3xl font-bold underline">
+        chatting
+    </h1>
+
+    <div class="chatbox p-4 max-w-md mx-auto bg-white rounded-lg shadow">
+        <ul class="message-list space-y-2 overflow-y-auto" style="height: 300px;">
+            <li class="message-in p-3 rounded bg-gray-100 text-left w-10/12">
+                <span class="h-6 w-6 rounded-full bg-gray-300 text-center">👤</span>
+                <p class="flex-grow">안녕하세요! 어떻게 도와드릴까요?</p>
+            </li>
+            <!-- message-out 요소에 ml-auto 클래스 추가하여 오른쪽 정렬 -->
+            <li class="message-out p-3 rounded bg-blue-500 text-white text-right w-10/12 ml-auto">
+                <span class="h-6 w-6 rounded-full bg-blue-800 text-center">👤</span>
+                <p class="flex-grow text-right">안녕하세요, 궁금한 것이 있어요.</p>
+            </li>
+        </ul>
+
+        <div class="input-area mt-4 flex">
+            <input type="text" class="form-input flex-grow p-3 rounded-l border-gray-300" placeholder="메시지 입력...">
+            <button class="p-3 bg-blue-500 text-white rounded-r">전송</button>
+        </div>
+    </div>
+
+</body>
+
+</html>
