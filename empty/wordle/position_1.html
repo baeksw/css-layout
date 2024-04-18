@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #parent, #other {
+            border: 5px solid tomato;
+        }
+
+        #parent {
+            position: relative;
+        }
+
+        #me {
+            position: absolute;
+            left: 0px;
+            top: 0px;
+            background-color: black;
+            color: white;
+        }
+
+        .wrap {
+            display: flex;
+            width: 100%;
+            height: 200px;
+            flex-wrap: nowrap;
+            flex-direction: row;
+            gap: 5px;
+            align-items:start;
+            overflow-x: auto;
+        }
+
+        .card {
+            width: 100px;
+            height: 160px;
+            flex-shrink: 0;
+            border: 1px solid black;
+            border-radius: 5px;
+            background-color: #93d1b9;
+            padding: 5px;
+        }
+
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+        }
+
+        .card-body {
+            font-size: 0.9rem;
+            font-weight: 400;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="card">
+            <div class="card-title">짭뽕</div>
+            <div class="card-body">
+                <p>today is good day to die</p>
+                <p>show me the money</p>
+            </div>
+        </div>
+        <div class="card">card2</div>
+        <div class="card">card3</div>
+        <div class="card">card4</div>
+        <div class="card">card5</div>
+        <div class="card">card6</div>
+        <div class="card">card6</div>
+        <div class="card">card6</div>
+        <div class="card">card6</div>
+        <div class="card">card6</div>
+        <div class="card">card6</div>
+        <div class="card">card6</div>
+ 
+    </div>
+
+
+    <div id="other">other</div>
+    <div id="parent">
+        parent
+        <div id="me">me</div>
+    </div>
+
+    <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis, unde?
+    </div>
+    
+</body>
+</html>
